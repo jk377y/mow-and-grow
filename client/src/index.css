@@ -1,0 +1,206 @@
+/* RESETS AND DEFAULTS */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --color1: #e0e0e0;
+    --color2: black;
+    --color3: #37fe6f;
+    --color4: #ff0000;
+    --bgColor: #222222;
+    --windowColor: #22222250;
+    --hover: #00ffff;
+}
+body {
+    background-color: #222222;
+    line-height: 1.5;
+    width: 100vw;
+    height: 100vh;
+    /* background-color: #72d339; */
+    background-color: #96c145b1;
+}
+h1, h2, h3 {
+    font-weight: bold;
+    color: var(--color2);
+    text-align: center;
+    margin: 1rem 0;
+}
+h1 {
+    font-size: 3rem;
+}
+h2 {
+    font-size: 2rem;
+}
+h3 {
+    font-size: 1.5rem;
+}
+
+
+/* Header Component */
+header {
+    background-image: url(../src/assets/images/header-background.avif);
+    width: 100vw;
+    height: 150px;
+    background-size: cover;
+    display: grid;
+    /* place-items: center; */
+    border-bottom: 1px solid var(--windowColor);
+}
+
+
+
+/* Home / Schedule Component */
+.home-hiddenUnlessIsAuthenticated,
+.schedule-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.home-hiddenUnlessIsAuthenticated h3 span, 
+.schedule-wrapper h3 span {
+    color: var(--color4);
+    text-transform: uppercase;
+}
+.home-user-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    /* margin: 2rem 0 0 0; */
+}
+.home-login-wrapper {
+    background-color: var(--windowColor);
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0px 0px 3px 1px var(--color2);
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 0 0 1rem 0;
+}
+.home-flip-link {
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    font-size: 1.25rem;
+}
+.home-flip-link:hover {
+    color: var(--hover);
+}
+
+
+
+/* Login/Signup Component */
+.login-form,
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+    line-height: 1;
+}
+.login-form input,
+.signup-form input {
+    font-size: 1.15rem;
+    padding: 0.25rem;
+    color: var(--color2);
+    text-align: center;
+    border: 2px inset var(--color2);
+    border-radius: 5px;
+}
+.login-form button,
+.signup-form button {
+    width: 50%;
+    font-size: 1rem;
+    padding: 0.25rem;
+    color: var(--color2);
+    background-color: var(--color3);
+    margin: 2rem 0 0 0;
+    border: 3px inset transparent;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.login-form button:hover,
+.signup-form button:hover {
+    background-color: var(--hover);
+}
+.login-form button:active,
+.signup-form button:active {
+    border: 3px inset var(--windowColor);
+}
+
+
+
+
+/* Logout Component */
+.logout-button {
+    width: 100px;
+    font-size: 1rem;
+    color: var(--color2);
+    background-color: var(--color3);
+    border: 3px inset transparent;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.logout-button:hover {
+    background-color: var(--hover);
+}
+
+
+
+
+
+/* Nav Component */
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 1rem 2rem 0 0;
+    gap: 0.5rem;
+}
+nav a img {
+    width: 35px;
+    height: 35px;    
+    transition: all ease 250ms;
+}
+nav a img:hover {
+    transform: scale(1.2)
+}
+
+
+
+
+/* Schedule Component */
+/* .schedule-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.schedule-wrapper h3 span {
+    color: var(--color4);
+    text-transform: uppercase;
+} */
+
+
+
+
+
+/* Media Queries */
+@media screen and (min-width: 600px) {
+    nav {
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        margin: 0 2rem 0 0;
+        gap: 2rem;
+    }
+}
+
+
+

@@ -32,7 +32,7 @@ const Schedule = () => {
 					{showPopup && <JobPopup togglePopup={togglePopup} />}
 					<div className="schedule-todos">
 						{/* todo: display the list of jobs */}
-						{jobs.map((job) => (
+						{/* {jobs.map((job) => (
 							<div key={job._id}>
 								<p>Date: {job.date}</p>
 								<p>Customer Name: {job.customerName}</p>
@@ -40,7 +40,7 @@ const Schedule = () => {
 								<p>Address: {job.address}</p>
 								<p>Description: {job.description}</p>
 							</div>
-						))}
+						))} */}
 					</div>
 				</>
 			)}

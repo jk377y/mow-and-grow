@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "all": "concurrently -n 'Client,Server' \"cd client && npm run dev\" \"cd server && npm run watch\""
+  },
+  "dependencies": {
+    "concurrently": "^8.2.0"
+  }
+}

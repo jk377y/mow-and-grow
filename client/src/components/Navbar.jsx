@@ -6,7 +6,7 @@ const StyledNav = styled.nav`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin: 1rem 2rem 0 0;
+	margin: 2rem 2rem 0 0;
 	gap: 0.5rem;
 
 	& a img {

@@ -37,7 +37,7 @@ const StyledHeader = styled.header`
 const Header = () => {
 	return (
 		<StyledHeader>
-			<img src="../src/assets/images/header-image.avif" alt="header image" />
+			<img src="/images/header-image.avif" alt="header image" />
 			<Navbar />
 		</StyledHeader>
 	);

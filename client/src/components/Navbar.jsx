@@ -5,9 +5,7 @@ import home from "../assets/icons/home.png";
 const StyledNav = styled.nav`
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	margin: 2rem 2rem 0 0;
-	gap: 0.5rem;
+	gap: 1rem;
 
 	& a img {
 		width: 35px;
@@ -17,12 +15,17 @@ const StyledNav = styled.nav`
 
 	& a img:hover {
 		transform: scale(1.2);
+		border: 2px solid var(--hover);
 	}
 
 	@media screen and (min-width: 600px) {
 		flex-direction: row;
-		margin: 0 2rem 0 0;
-		gap: 2rem;
+		gap: 0rem;
+
+		& a img {
+			width: 50px;
+			height: 50px;
+		}
 	}
 `;
 

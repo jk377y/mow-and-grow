@@ -12,32 +12,15 @@
     --bgColor: #222222;
     --windowColor: #22222250;
     --hover: #00ffff;
+    --test: rgb(83, 83, 83);
 }
 body {
     background-color: #222222;
     line-height: 1.5;
     width: 100vw;
     height: 100vh;
-    /* background-color: #72d339; */
     background-color: #96c145b1;
 }
-h1, h2, h3 {
-    font-weight: bold;
-    color: var(--color2);
-    text-align: center;
-    margin: 1rem 0;
-}
-h1 {
-    font-size: 3rem;
-}
-h2 {
-    font-size: 2rem;
-}
-h3 {
-    font-size: 1.5rem;
-}
-
-
 
 
 

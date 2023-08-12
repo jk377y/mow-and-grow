@@ -3,6 +3,10 @@ import styled from "styled-components";
 import LogoutButton from "../components/LogoutButton";
 import JobPopup from "../components/JobPopup";
 
+const StyledScheduleTitle = styled.h2`
+    text-align: center;
+`;
+
 const StyledJobListWrapper = styled.div`
 	display: flex;
 	width: 100vw;
@@ -46,7 +50,7 @@ const Schedule = () => {
 
 	return (
 		<>
-			<h2>Schedule</h2>
+			<StyledScheduleTitle>Schedule</StyledScheduleTitle>
 			{username && (
 				<>
 					<div className="schedule-wrapper">

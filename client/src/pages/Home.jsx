@@ -1,9 +1,14 @@
 import { useState } from 'react';
+import styled from "styled-components";
 import { isAuthenticated } from '../utils/isAuthenticated';
 import { handleLogout } from '../utils/handleLogout';
 import LogoutButton from '../components/LogoutButton';
 import Login from '../components/Login';
 import Signup from '../components/Signup';
+
+const StyledHomeTitle = styled.h2`
+    text-align: center;
+`;
 
 const Home = () => {
     const [flipSide, setFlipSide] = useState('login'); // 'login' or 'signup'
@@ -14,7 +19,7 @@ const Home = () => {
 
     return (
         <>
-            <h2>Mow & Grow</h2>
+            <StyledHomeTitle>Mow & Grow</StyledHomeTitle>
             {username && isAuthenticated() && (
                 <div className='home-hiddenUnlessIsAuthenticated'>
                     <h3>Hello <span>{username}</span></h3>

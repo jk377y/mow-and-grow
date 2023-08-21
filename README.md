@@ -6,8 +6,24 @@
 - Current issue is deploying the backend on Vercel. I am currently working on a solution. Mostly issues related to CORS policies. Will resolve soon.
 
 
+## Table of Contents
+- [Description](#description)
+- [Technologies Used](#technologies-used)
+- [Usage](#usage)
+- [Questions](#questions)
+- [License](#license)
+
 ## Description
-This is a web application that I built for my son to schedule his clients for his lawn mower business. Nothing made me more proud than to be able to help him with his own ambitions. This a full stack application using React and MongoDB. It is basically a glorified TODO application but organizes his clients and their appointments chronologically. 
+This is a web application that I built for my son to schedule his clients for his lawn mower business. Nothing made me more proud than to be able to help him with his own ambitions. It is basically a glorified TODO application but organizes his clients and their appointments chronologically. It also has user authentication with JWT and Bcrypt for security.
+
+## Technologies Used
+- MongoDB
+- Express
+- React
+- Node
+- Styled Components
+- JWT
+- Bcrypt
 
 
 ## Usage
